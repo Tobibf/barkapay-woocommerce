@@ -1,0 +1,58 @@
+{
+  "name": "barkapay-sa/barkapay-php-sdk",
+  "description": "A PHP SDK for BarkaPay payment service.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Services\\": "src/Services/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Ultra226",
+      "email": "ulrichtraore956@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "guzzlehttp/guzzle": "^7.0",
+    "vlucas/phpdotenv": "^5.4",
+    "illuminate/http": "^11.35",
+    "nesbot/carbon": "^3.8"
+  },
+  "support": {
+    "issues": "https://github.com/barkapay-sa/barkapay-php-sdk/issues",
+    "source": "https://github.com/barkapay-sa/barkapay-php-sdk"
+  },
+  "extra": {
+    "exclude-from-classmap": [
+      "/tests/",
+      "/vendor/",
+      "/.github/"
+    ]
+  },
+  "archive": {
+    "exclude": [
+      "/.gitignore",
+      "/.github/",
+      "/.env",
+      "/.env.example",
+      "/tests/",
+      "/composer.lock",
+      "/vendor/",
+      "/.editorconfig",
+      "/.gitattributes",
+      "/.git/",
+      "/docs/",
+      "/examples/"
+    ]
+  },
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
