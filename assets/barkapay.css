@@ -1,0 +1,49 @@
+.barkapay-settings-page {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.barkapay-settings-page h1 {
+    color: #0073aa;
+    font-size: 26px;
+}
+
+.barkapay-settings-page input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.wrap h1 {
+    color: #0073aa;
+    font-size: 28px;
+}
+
+.wrap form {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+}
+
+.wrap input[type="text"],
+.wrap input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.wrap input[type="submit"] {
+    background: #0073aa;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}

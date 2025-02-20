@@ -1,12 +1,15 @@
 <?php
 
+namespace BarkaPay\WooCommerce;
+
 // Security: Prevent direct access
+
 if (!defined('ABSPATH')) {
     exit;
 }
+use Services\BarkaPayClient;
+use WC_Payment_Gateway;
 
-// Include the BarkaPay SDK (if required)
-require_once plugin_dir_path(__FILE__) . '../barkapay-sdk/src/Services/BarkaPayClient.php';
 
 class WC_Gateway_BarkaPay extends WC_Payment_Gateway
 {
@@ -86,7 +89,7 @@ class WC_Gateway_BarkaPay extends WC_Payment_Gateway
         $order = wc_get_order($order_id);
 
         // Initialize BarkaPay Client
-        $barkapay = new \Services\BarkaPayClient(
+        $barkapay = new BarkaPayClient(
             $this->api_key,
             $this->api_secret,
             $this->sci_key,
